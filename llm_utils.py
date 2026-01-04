@@ -35,7 +35,7 @@ def get_llm():
 # SECURITY NOTE: Replace 'YOUR_API_KEY_HERE' with your actual Google AI Studio Key
 # Example: GOOGLE_API_KEY = "AIzaSy..."
 # ---------------------------------------------------------
-GOOGLE_API_KEY = "AIzaSyDw4DnPpIY1JjvM1xuhxCqbXb6w1eOdMiA" 
+GOOGLE_API_KEY = "" 
 
 def get_api_key():
     """Prioritizes Hardcoded Key -> Env Var -> Session State"""
@@ -241,3 +241,4 @@ def query_incident_bot(user_query, context_str):
         return response.content
     except Exception as e:
         return f"I encountered a system error: {str(e)}"
+
